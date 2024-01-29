@@ -1,13 +1,13 @@
-export interface Lotation {
+export interface Location {
+  content: string;
   id: 10998878976097;
   title: string;
-  content: string;
   opened: true;
   mask: string;
   towel: string;
   fountain: string;
   locker_room: string;
-  schedules: Schedule[];
+  schedules: Schedule[]
 }
 
 interface Schedule {
