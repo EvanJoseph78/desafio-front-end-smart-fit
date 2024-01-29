@@ -70,7 +70,7 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 14px;
-  width: 25%;
+  width: 100%;
   border: none;
   cursor: pointer;
 }
@@ -106,5 +106,15 @@
   .form-group .checkbox-wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .form-group .btn-wrapper .btn {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .form-group .btn-wrapper .btn {
+    width: 25%;
   }
 }
