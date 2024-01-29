@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './forms.component.html',
-  styleUrl: './forms.component.scss'
+  styleUrl: './forms.component.scss',
 })
 export class FormsComponent {
-
+  resuts = [];
 }
