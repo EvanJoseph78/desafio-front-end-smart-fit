@@ -1,1 +1,3 @@
-<p>cards-list works!</p>
+@for (card of unitsList; track card){
+<app-card [card]="card"></app-card>
+}

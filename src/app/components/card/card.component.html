@@ -1,0 +1,22 @@
+<div class="card">
+  <span [ngClass]="{
+    opened: card.opened
+    }">{{ card.opened ? 'Aberto' : 'Fechado'}}</span>
+
+  <h3>{{card.title}}</h3>
+  <p>{{card.content}}</p>
+  <ul>
+    <img [src]="'/assets/images/' + card.mask + '-mask.png'">
+    <img [src]="'/assets/images/' + card.towel + '-towel.png'">
+    <img [src]="'/assets/images/' + card.fountain + '-fountain.png'">
+    <img [src]="'/assets/images/' + card.locker_room + '-lockerroom.png'">
+  </ul>
+  <ul>
+    @for (schedule of card.schedules; track schedule){
+    <li>
+      <b>{{schedule.weekdays}}</b>
+      {{schedule.hour}}
+    </li>
+    }
+  </ul>
+</div>
